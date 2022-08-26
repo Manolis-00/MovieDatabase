@@ -1,0 +1,10 @@
+725300	The Terminator	1984	107	Action	James Cameron	Orion Pictures	6.4
+268247	Harry Potter and the Philosopher's Stone	2001	152	Action	Chris Columbus	Warner Bros	125.0
+402973	The Lord of the Rings: The Fellowship of the Ring	2001	178	Action	Peter Jackson	New Line Cinema	93.0
+812378	Scream	1996	111	Horror	Wes Craven	Dimension Films	14.5
+166206	The Pursuit of Happyness	2006	117	Drama	Gabriele Muccino	Sony Pictures Releasing	55.0
+437597	Harry Potter and the Chamber of Secrets	2002	161	Action	Chris Columbus	Warner Bros	100.0
+786860	The Lord of the Rings: The Two Towers	2002	179	Action	Peter Jackson	New Line Cinema	94.0
+465693	Terminator 2: Judgement Day	1991	137	Action	James Cameron	Tri-Star Pictures	98.0
+525850	Scream 2	1997	120	Horror	Wes Craven	Dimension Films	24.0
+141482	The Notebook	2004	124	Romantic	Nick Cassavetes	New Line Cinema	29.0

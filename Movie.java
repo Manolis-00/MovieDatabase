@@ -7,7 +7,7 @@ public class Movie {
     private String movieCategory;
     private String movieDirector;
     private String movieDistributionMethod;
-    private int movieBudget;
+    private double movieBudget;
 
     public Movie (int registryNumber,
                   String movieTitle,
@@ -16,7 +16,7 @@ public class Movie {
                   String movieCategory,
                   String movieDirector,
                   String movieDistributionMethod,
-                  int movieBudget) {
+                  double movieBudget) {
         this.movieTitle = movieTitle;
         this.yearReleased = yearReleased;
         this.movieDuration = movieDuration;
@@ -82,7 +82,7 @@ public class Movie {
         this.movieDistributionMethod = movieDistributionMethod;
     }
 
-    public int getMovieBudget() {
+    public double getMovieBudget() {
         return movieBudget;
     }
 

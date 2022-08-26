@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="61dc38fa-830b-4499-9404-a003cb0d8666" name="Changes" comment="Initial Commit">
       <change afterPath="$PROJECT_DIR$/AboutWindow.java" afterDir="false" />
@@ -50,11 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Programming Languages/JAVA/Ergastirio/FinalProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "last_opened_file_path": "C:/Users/emman/Downloads/Object-oriented solution"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -84,9 +77,6 @@
       <workItem from="1654675785693" duration="7441000" />
       <workItem from="1654701242004" duration="9165000" />
       <workItem from="1654765223439" duration="15155000" />
-      <workItem from="1655907556027" duration="1089000" />
-      <workItem from="1657909349245" duration="376000" />
-      <workItem from="1661524668340" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1654766291757</created>

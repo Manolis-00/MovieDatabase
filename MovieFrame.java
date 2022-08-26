@@ -47,7 +47,7 @@ public class MovieFrame extends JFrame {
     private JMenuItem aboutItem;
 
 
-    private ArrayList<Movie> moviesList = new ArrayList();
+    public ArrayList<Movie> moviesList = new ArrayList();
 
     public MovieFrame() {
         movieTitleLabel = new JLabel("Title: \t");
@@ -188,28 +188,28 @@ public class MovieFrame extends JFrame {
         statisticsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO addStatisticsMethod
+                StatisticsWindow statistics = new StatisticsWindow(moviesList);
             }
         });
 
         statisticsItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO addStatisticsMethod
+                StatisticsWindow statistics = new StatisticsWindow(moviesList);
             }
         });
 
         aboutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO addAboutMethod
+                AboutWindow about = new AboutWindow();
             }
         });
 
         aboutItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO addAboutMethod
+                AboutWindow about = new AboutWindow();
             }
         });
 
@@ -229,7 +229,7 @@ public class MovieFrame extends JFrame {
         String movieDirector = movieDirectorTextField.getText();
         String movieDistributionMethod = movieDistributionMethodTextField.getText();
         int registryNumber;
-        int movieBudget = Integer.parseInt(movieBudgetTextField.getText());
+        double movieBudget = Double.parseDouble(movieBudgetTextField.getText());
 
         if (!movieTitle.isEmpty() &&
                 !movieCategory.isEmpty() &&
@@ -247,6 +247,11 @@ public class MovieFrame extends JFrame {
             }
 
             registryNumber = (int) Math.floor(Math.random() * (999999 - 100000 + 1) + 100000);
+
+            for(Movie movie:moviesList){
+                while (registryNumber == movie.getRegistryNumber())
+                    registryNumber = (int) Math.floor(Math.random() * (999999 - 100000 + 1) + 100000);
+            }
 
             Movie movie = new Movie(registryNumber,
                     movieTitle,
@@ -277,8 +282,6 @@ public class MovieFrame extends JFrame {
         }
     }
 
-
-
     private void saveToFileAction() {
         String data = area.getText();
 
@@ -302,12 +305,6 @@ public class MovieFrame extends JFrame {
             } catch (IOException e) {
                 System.err.println(e);
             }
-
         }
     }
-
-    private void aboutAction() {
-
-    }
-
 }
